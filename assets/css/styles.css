@@ -18,6 +18,9 @@ p {
 
 .main__item {
   flex: 1 1;
+}
+
+.avatar {
   padding: 50px 30px 0px 30px;
 }
 
@@ -27,6 +30,7 @@ p {
 
 .fullname {
   font-size: 40px;
+  margin-top: 20px;
 }
 
 .job {
@@ -93,6 +97,7 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
