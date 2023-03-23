@@ -3,15 +3,20 @@
   padding: 0;
 }
 
-.main {
+.container {
   width: 75%;
   margin: 0 auto;
+}
+
+.main {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-p {
+p,
+h1,
+h3 {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -50,6 +55,7 @@ p {
   background-color: black;
   color: white;
   text-align: center;
+  height: 15px;
 }
 
 .socail-links i {
@@ -69,6 +75,51 @@ p {
   display: block;
 }
 
+.section-skills {
+  padding: 80px 0px;
+  background: #fcfcfc;
+  border: 1px dashed #cfcfcf;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills__item {
+  padding: 20px;
+  text-align: center;
+}
+
+.skills__symbol {
+  margin: 0px 30px 30px 30px;
+}
+
+.skills__symbol i {
+  font-size: 40px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+.skills__symbol i:before {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.skills-title {
+  margin-bottom: 15px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .main {
@@ -85,6 +136,13 @@ p {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .info {
     text-align: center;
@@ -97,7 +155,6 @@ p {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
