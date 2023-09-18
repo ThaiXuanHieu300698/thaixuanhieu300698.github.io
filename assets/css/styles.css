@@ -18,7 +18,7 @@ p,
 h1,
 h3 {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Space Mono,monospace;
 }
 
 .main__item {
@@ -181,4 +181,17 @@ section {
   .main {
     flex-direction: row;
   }
+}
+
+.select-lang {
+  width: 30px;
+  position: fixed;
+  z-index: 99;
+  bottom: 10px;
+  right: 10px;
+}
+
+.select-lang img {
+  cursor: pointer;
+  margin: 5px 0;
 }
