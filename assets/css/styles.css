@@ -76,7 +76,7 @@ h3 {
 }
 
 section {
-  padding: 80px 0px;
+  padding: 50px 0px;
 }
 
 .section-skills {
@@ -98,8 +98,10 @@ section {
 
 .skills__item {
   padding: 20px;
+  margin: 15px;
   text-align: center;
   flex: 1;
+  border: 1px dashed black;
 }
 
 .skills__symbol {
