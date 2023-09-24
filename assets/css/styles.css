@@ -80,7 +80,7 @@ section {
   padding: 50px 0px;
 }
 
-.section-skills {
+.section-skills, .section-summary {
   background: #fcfcfc;
   border: 1px dashed #cfcfcf;
 }
@@ -90,6 +90,11 @@ section {
   font-weight: normal;
   text-align: center;
   margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.section-content {
+  text-align: center;
 }
 
 .skills {
