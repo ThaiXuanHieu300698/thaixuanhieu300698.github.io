@@ -129,6 +129,7 @@ section {
 }
 
 .skills-title {
+  word-wrap: break-word;
   margin-bottom: 15px;
 }
 
