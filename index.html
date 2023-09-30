@@ -13,7 +13,7 @@
     />
     <link
       rel="shortcut icon"
-      href="https://bestofjs.org/logos/bun.svg"
+      href="./assets/icon/C_Sharp_Icon.png"
       type="image/x-icon"
     />
     <link
@@ -26,9 +26,9 @@
   <body>
     <main class="main container">
       <div class="info main__item animate__animated animate__zoomIn">
-        <p class="fullname">I'm Hieu</p>
-        <p class="job">.NET Developer</p>
-        <p class="short-desc">
+        <p class="fullname lang lang-1">I'm Hieu</p>
+        <p class="job lang lang-2">.NET Developer</p>
+        <p class="short-desc lang lang-3">
           I am from planet with a passion of Programming, Graphical user interface
           design. I specialise in standards compliant websites with a focus on
           usability. Enthusiastic about life, design and innovation.
@@ -93,9 +93,10 @@
       </div>
     </section>
     <div class="select-lang">
-      <img src="./assets/icon/vietnam.png" width="100%" alt="">
-      <img src="./assets/icon/japan.png" width="100%" alt="">
-      <img src="./assets/icon/united-states.png" width="100%" alt="">
+      <img onclick="changeLang('vi')" src="./assets/icon/vietnam.png" width="100%" alt="">
+      <img onclick="changeLang('jp')" src="./assets/icon/japan.png" width="100%" alt="">
+      <img onclick="changeLang('en')" src="./assets/icon/united-states.png" width="100%" alt="">
     </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
