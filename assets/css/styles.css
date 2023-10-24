@@ -80,9 +80,16 @@ section {
   padding: 50px 0px;
 }
 
-.section-skills, .section-summary {
-  background: #fcfcfc;
-  border: 1px dashed #cfcfcf;
+.section-skills {
+  background: #f5f5f5;
+  border: 2px dashed #cdcdcd;
+}
+
+.section-roadmap {
+  background: #f5f5f5 url('../img/street-line.png');
+  background-position: center;
+  background-size: 200px 300px;
+  height: 250px;
 }
 
 .section-title {
@@ -90,7 +97,6 @@ section {
   font-weight: normal;
   text-align: center;
   margin-bottom: 50px;
-  text-transform: uppercase;
 }
 
 .section-content {
@@ -131,6 +137,35 @@ section {
 .skills-title {
   word-wrap: break-word;
   margin-bottom: 15px;
+}
+
+.roadmap-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.roadmap-line div {
+  rotate: 90deg;
+}
+
+.roadmap-line p {
+  rotate: -90deg;
+}
+
+.step-detail {
+  position: relative;
+}
+
+.step-detail p {
+  position: absolute;
+  right: 0;
+}
+
+.step {
+  width: 60px;
+  margin: 20px;
 }
 
 /* Extra small devices (phones, 600px and down) */
