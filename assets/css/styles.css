@@ -148,25 +148,53 @@ section {
 
 .roadmap-line div {
   rotate: 90deg;
-}
-
-.roadmap-line p {
-  rotate: -90deg;
+  position: relative;
 }
 
 .step-detail {
   position: relative;
 }
 
-.step-detail p {
+.step-detail pre {
+  rotate: -90deg;
   position: absolute;
-  right: 0;
 }
 
 .step {
   width: 60px;
   margin: 20px;
 }
+
+.step-1 {
+  top: -90px;
+}
+
+.step-1 pre {
+  position: absolute;
+  top: 85px;
+  right: -15px;
+}
+
+.step-2 {
+  bottom: -40px;
+}
+
+.step-2 pre {
+  position: absolute;
+  top: 85px;
+  right: -55px;
+}
+
+.step-3 {
+  top: -90px;
+}
+
+.step-3 pre {
+  position: absolute;
+  top: 85px;
+  right: -35px;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -188,6 +216,28 @@ section {
 @media only screen and (max-width: 768px) {
   .skills {
     flex-direction: column;
+  }
+
+  .step {
+    width: 45px;
+  }
+
+  .step-1 pre {
+    position: absolute;
+    top: 65px;
+    right: -20px;
+  }
+
+  .step-2 pre {
+    position: absolute;
+    top: 65px;
+    right: -55px;
+  }
+
+  .step-3 pre {
+    position: absolute;
+    top: 65px;
+    right: -35px;
   }
 }
 
