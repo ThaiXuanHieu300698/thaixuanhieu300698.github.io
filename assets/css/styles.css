@@ -195,6 +195,95 @@ section {
   right: -35px;
 }
 
+.select-lang {
+  width: 30px;
+  position: fixed;
+  z-index: 99;
+  bottom: 10px;
+  right: 10px;
+}
+
+.select-lang img {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.projects {
+  display: flex;
+}
+
+.project {
+  border: 1px solid #202224;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  margin: 15px;
+}
+
+.project__icon {
+  color: #202224;
+}
+
+.project__name {
+  margin: 16px 0px;
+  color: #202224;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.project__desc {
+  color: #202224;
+  font-size: 1rem;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.techstack__header {
+  margin: 16px 0px;
+  font-family: Space Mono,monospace;
+}
+
+.techstack__header i {
+  margin-right: 10px;
+}
+
+.techstack__enum {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.techstack__item {
+  border: 1px solid #202224;
+  padding: 4px;
+  margin: 5px 5px 5px 0px;
+  list-style: none;
+}
+
+.techstack__item:last-child {
+  margin-top: 0px;
+}
+
+.project__footer {
+  margin-top: 16px;
+}
+
+.project__footer a {
+  text-decoration: none;
+  color: #202224;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .info {
+    text-align: center;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -214,7 +303,7 @@ section {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 768px) {
-  .skills {
+  .skills, .projects {
     flex-direction: column;
   }
 
@@ -239,15 +328,9 @@ section {
     top: 65px;
     right: -35px;
   }
-}
 
-@media only screen and (min-width: 600px) {
-  .info {
-    text-align: center;
-  }
-
-  .main {
-    flex-direction: column;
+  .techstack__item:last-child {
+    margin-top: 5px;
   }
 }
 
@@ -275,17 +358,4 @@ section {
   .main {
     flex-direction: row;
   }
-}
-
-.select-lang {
-  width: 30px;
-  position: fixed;
-  z-index: 99;
-  bottom: 10px;
-  right: 10px;
-}
-
-.select-lang img {
-  cursor: pointer;
-  margin: 5px 0;
 }
