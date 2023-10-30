@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Space Mono,monospace;
 }
 
 .container {
@@ -18,7 +19,6 @@ p,
 h1,
 h3 {
   margin: 0;
-  font-family: Space Mono,monospace;
 }
 
 .main__item {
@@ -240,7 +240,6 @@ section {
 
 .techstack__header {
   margin: 16px 0px;
-  font-family: Space Mono,monospace;
 }
 
 .techstack__header i {
@@ -258,10 +257,6 @@ section {
   padding: 4px;
   margin: 5px 5px 5px 0px;
   list-style: none;
-}
-
-.techstack__item:last-child {
-  margin-top: 0px;
 }
 
 .project__footer {
@@ -327,10 +322,6 @@ section {
     position: absolute;
     top: 65px;
     right: -35px;
-  }
-
-  .techstack__item:last-child {
-    margin-top: 5px;
   }
 }
 

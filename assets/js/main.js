@@ -20,3 +20,7 @@ function changeLang(lang){
   console.log(langs)
   console.log(lang)
 }
+
+window.addEventListener("resize", function() {
+  document.getElementById("wb").style.width = document.getElementById("wa").offsetWidth + "px";
+});
