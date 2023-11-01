@@ -213,7 +213,7 @@ section {
 }
 
 .project {
-  border: 1px solid #202224;
+  border: 1px dashed black;
   display: flex;
   flex-direction: column;
   padding: 32px;
