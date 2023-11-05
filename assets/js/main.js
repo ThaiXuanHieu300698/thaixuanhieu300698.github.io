@@ -2,23 +2,37 @@ const viUrl = "./assets/locales/vi.json";
 const jpUrl = "./assets/locales/jp.json";
 const enUrl = "./assets/locales/en.json";
 
-const fetchDataLang = async () => {
-  const viData = null;
+const loadDataLang = async (lang, langElements) => {
+  let langUrl = "";
   try {
-    const response = await fetch(viUrl);
-    const viData = await response.json();  
-    console.log(viData);
+    switch (lang) {
+      case 'vi':
+        langUrl = viUrl;
+        break;
+      case 'jp':
+        langUrl = jpUrl;
+        break;
+      case 'en':
+        langUrl = enUrl;
+        break;
+      default:
+        break;
+    }
+    const response = await fetch(langUrl);
+    const langData = await response.json();
+
+    for (const [index, [key, value]] of Object.entries(langData).entries()) {
+      langElements[index].innerHTML = value;
+    }
+
   } catch (error) {
     console.log(error);
   }
 };
 
-fetchDataLang();
-
 function changeLang(lang){
-  const langs = document.getElementsByClassName('lang');
-  console.log(langs)
-  console.log(lang)
+  const langElements = document.getElementsByClassName('lang');
+  loadDataLang(lang, langElements);
 }
 
 window.addEventListener("load", function() {
