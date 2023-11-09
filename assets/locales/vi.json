@@ -1,5 +1,24 @@
 {
     "fullname": "Tôi là Hiếu",
     "job": ".NET Developer",
-    "short-desc": "Tôi là nhà phát triển có 2 năm kinh nghiệm về công nghệ C#.NET. Tôi chuyên về các trang web tuân thủ tiêu chuẩn và tập trung vào khả năng sử dụng. Nhiệt tình về cuộc sống, thiết kế và đổi mới."
+    "short-desc": "Tôi là nhà phát triển có 2 năm kinh nghiệm về công nghệ C#.NET. Tôi chuyên về các trang web tuân thủ tiêu chuẩn và tập trung vào khả năng sử dụng. Nhiệt tình về cuộc sống, thiết kế và đổi mới.",
+    "roadmap": "Lộ trình",
+    "vision": "Tầm nhìn",
+    "vison-content": "Trở thành một lập trình viên Full-stack.",
+    "skills": "Kỹ năng",
+    "fmw/lib": "Khung/ Nền tảng",
+    "db": "Cơ sở dữ liệu",
+    "tools": "Công cụ",
+    "projects": "Dự án",
+    "project1": "Dự toán",
+    "project1-desc": "Nếu khách hàng là khách hàng, khách hàng sẽ có thể nhận được dịch vụ khách hàng. Một người lao động lớn, một số người trong số họ thành công",
+    "techstack": "Công nghệ:",
+    "project2": "Hệ thống định danh",
+    "project2-desc": "Nếu khách hàng là khách hàng, khách hàng sẽ có thể nhận được dịch vụ khách hàng. Một người lao động lớn, một số người trong số họ thành công",
+    "techstack2": "Công nghệ:",
+    "seemore2": "Xem thêm <i class='fa fa-arrow-right'></i>",
+    "project3": "Không tên",
+    "project3-desc": "Nếu khách hàng là khách hàng, khách hàng sẽ có thể nhận được dịch vụ khách hàng. Một người lao động lớn, một số người trong số họ thành công",
+    "techstack3": "Công nghệ:",
+    "seemore3": "Xem thêm <i class='fa fa-arrow-right'></i>"
 }
