@@ -172,7 +172,7 @@ section {
 .step-1 pre {
   position: absolute;
   top: 85px;
-  right: -15px;
+  right: -20px;
 }
 
 .step-2 {
@@ -182,7 +182,7 @@ section {
 .step-2 pre {
   position: absolute;
   top: 85px;
-  right: -60px;
+  right: -20px;
 }
 
 .step-3 {
@@ -192,7 +192,17 @@ section {
 .step-3 pre {
   position: absolute;
   top: 85px;
-  right: -35px;
+  right: -60px;
+}
+
+.step-4 {
+  bottom: -40px;
+}
+
+.step-4 pre {
+  position: absolute;
+  top: 85px;
+  right: -40px;
 }
 
 .select-lang {
@@ -312,16 +322,81 @@ section {
     right: -20px;
   }
 
+  .step-2 {
+    left: -60px;
+  }
+
   .step-2 pre {
     position: absolute;
     top: 65px;
-    right: -60px;
+    right: -20px;
+  }
+
+  .step-3 {
+    left: -60px;
   }
 
   .step-3 pre {
     position: absolute;
     top: 65px;
-    right: -35px;
+    right: -60px;
+  }
+
+  .step-4 {
+    left: 220px;
+    bottom: 110px;
+  }
+
+  .step-4 pre {
+    position: absolute;
+    top: 65px;
+    right: -40px;
+  }
+}
+
+@media only screen and (min-width: 453px) {
+  .step-3 {
+    left: 50px;
+  }
+
+  .step-3 pre {
+    position: absolute;
+    top: 65px;
+    right: -60px;
+  }
+
+  .step-4 {
+    left: 0px;
+    bottom: -40px;
+  }
+
+  .step-4 pre {
+    position: absolute;
+    top: 65px;
+    right: -40px;
+  }
+}
+
+@media only screen and (max-width: 453px) {
+  .step-3 {
+    left: -40px;
+  }
+
+  .step-3 pre {
+    position: absolute;
+    top: 65px;
+    right: -60px;
+  }
+
+  .step-4 {
+    left: 210px;
+    bottom: 110px;
+  }
+
+  .step-4 pre {
+    position: absolute;
+    top: 65px;
+    right: -40px;
   }
 }
 
