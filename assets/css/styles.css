@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Space Mono,monospace;
+  font-family: 'Courier New', monospace;
 }
 
 .container {
@@ -85,6 +85,24 @@ section {
   border: 2px dashed #cdcdcd;
 }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.skills-title {
+  word-wrap: break-word;
+  margin-bottom: 15px;
+}
+
+.skills div {
+  padding: 10px;
+}
+
 .section-roadmap {
   background: #f5f5f5 url('../img/street-line.png');
   background-position: center;
@@ -101,42 +119,6 @@ section {
 
 .section-content {
   text-align: center;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-}
-
-.skills__item {
-  padding: 20px;
-  margin: 15px;
-  text-align: center;
-  flex: 1;
-  border: 1px dashed black;
-}
-
-.skills__symbol {
-  margin: 0px 30px 30px 30px;
-}
-
-.skills__symbol i {
-  font-size: 40px;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-}
-
-.skills__symbol i:before {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-}
-
-.skills-title {
-  word-wrap: break-word;
-  margin-bottom: 15px;
 }
 
 .roadmap-line {
@@ -172,7 +154,7 @@ section {
 .step-1 pre {
   position: absolute;
   top: 85px;
-  right: -20px;
+  right: -55px;
 }
 
 .step-2 {
@@ -182,7 +164,7 @@ section {
 .step-2 pre {
   position: absolute;
   top: 85px;
-  right: -20px;
+  right: -70px;
 }
 
 .step-3 {
@@ -191,18 +173,8 @@ section {
 
 .step-3 pre {
   position: absolute;
-  top: 85px;
-  right: -60px;
-}
-
-.step-4 {
-  bottom: -40px;
-}
-
-.step-4 pre {
-  position: absolute;
-  top: 85px;
-  right: -40px;
+  top: 75px;
+  right: -45px;
 }
 
 .select-lang {
@@ -211,6 +183,10 @@ section {
   z-index: 99;
   bottom: 10px;
   right: 10px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 20px;
 }
 
 .select-lang img {
@@ -308,7 +284,7 @@ section {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 768px) {
-  .skills, .projects {
+  .projects {
     flex-direction: column;
   }
 
@@ -318,8 +294,8 @@ section {
 
   .step-1 pre {
     position: absolute;
-    top: 65px;
-    right: -20px;
+    top: 60px;
+    right: -55px;
   }
 
   .step-2 {
@@ -329,7 +305,7 @@ section {
   .step-2 pre {
     position: absolute;
     top: 65px;
-    right: -20px;
+    right: -70px;
   }
 
   .step-3 {
@@ -338,19 +314,8 @@ section {
 
   .step-3 pre {
     position: absolute;
-    top: 65px;
-    right: -60px;
-  }
-
-  .step-4 {
-    left: 220px;
-    bottom: 110px;
-  }
-
-  .step-4 pre {
-    position: absolute;
-    top: 65px;
-    right: -40px;
+    top: 75px;
+    right: -45px;
   }
 }
 
@@ -361,19 +326,8 @@ section {
 
   .step-3 pre {
     position: absolute;
-    top: 65px;
-    right: -60px;
-  }
-
-  .step-4 {
-    left: 0px;
-    bottom: -40px;
-  }
-
-  .step-4 pre {
-    position: absolute;
-    top: 65px;
-    right: -40px;
+    top: 75px;
+    right: -45px;
   }
 }
 
@@ -384,20 +338,10 @@ section {
 
   .step-3 pre {
     position: absolute;
-    top: 65px;
-    right: -60px;
+    top: 75px;
+    right: -45px;
   }
 
-  .step-4 {
-    left: 200px;
-    bottom: 110px;
-  }
-
-  .step-4 pre {
-    position: absolute;
-    top: 65px;
-    right: -40px;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

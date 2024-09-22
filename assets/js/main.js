@@ -34,11 +34,3 @@ function changeLang(lang){
   const langElements = document.getElementsByClassName('lang');
   loadDataLang(lang, langElements);
 }
-
-window.addEventListener("load", function() {
-  document.getElementById("wb").style.width = document.getElementById("wa").offsetWidth + "px";
-});
-
-window.addEventListener("resize", function() {
-  document.getElementById("wb").style.width = document.getElementById("wa").offsetWidth + "px";
-});
